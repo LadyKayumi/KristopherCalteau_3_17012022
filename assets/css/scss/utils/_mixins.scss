@@ -1,0 +1,22 @@
+@mixin bouton {
+    a{
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(-5deg, $secondary 0%, $primary 85%, $secondary 100%);
+        border-radius: 25px;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+}
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+}
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin lien_noir {
+    text-decoration: none;
+    color: black;
+}

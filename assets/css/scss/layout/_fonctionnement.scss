@@ -1,0 +1,40 @@
+.fonctionnement{
+    @include flex_column;
+    flex-wrap: wrap;
+    width: 100%;
+        h1{
+            font-size: 19px;
+            margin: 30px 0 20px 7px;
+        }
+        div{
+            margin: 10px auto;
+            width: 90%;
+            background-color: $background_claire;
+            border: 2px solid $background_claire;
+            border-radius: 17px;
+            box-shadow: 0 2px 9px 1px $shadow;
+            padding: 20px 5px;
+        }   
+        .fa-mobile-alt{
+            color: $icons_fonctionnement;
+            margin-right: 18px;
+            margin-left: 15px;
+        }
+        .fa-list-ul{
+            color: $icons_fonctionnement;
+            margin-right: 15px;
+            margin-left: 14px;
+        }
+        .fa-store{
+            color: $icons_fonctionnement;
+            margin-right: 14px;
+            margin-left: 13px;
+        }
+        .chiffre{
+            color: white;
+            font-size: 10px;
+            padding: 3px 6px;
+            background-color: $primary;
+            border-radius: 50%;
+        }
+}

@@ -1,0 +1,64 @@
+.logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+.img_logo {
+    width: 43%;
+}
+.localisation{
+    @include flex_center;
+    width: 105%;
+    box-shadow: inset 0 2px 4px -3px;
+    background-color: #EAEAEA;
+    margin-left: -7px;
+    a {
+        font-size: 13px;
+        color: #353535;
+        text-decoration: none;
+        padding: 12px 0 12px 0;
+    }
+}
+.fa-map-marker-alt{
+    margin-right: 7px;
+}
+.introduction{
+    @include flex_center;
+    flex-direction: column;
+    align-items: center;
+    width: 105%;
+    background-color: $background_claire;
+    margin-left: -7px;
+    h1{
+        @include flex_center;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 70%;
+        font-size: 22px;
+        margin-top: 16px;
+    }
+    p{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 80%;
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    @include bouton;
+    a{
+        display: flex;
+    }
+}
+.fa-arrow-left{
+    position: absolute;
+    left: 18px;
+    top: 12px;
+}
+.img_fond{
+    width: 104%;
+    margin-left: -8px;
+    margin-bottom: -40px;
+}

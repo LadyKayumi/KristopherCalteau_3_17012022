@@ -1,0 +1,27 @@
+ul{
+    @include flex_column;
+    padding-left: 25px;
+    background-color: #353535;
+    margin: -8px;
+    .logo_blanc{
+        width: 30%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    li{
+        list-style: none;
+        margin-bottom: 10px;
+        .fa-utensils{
+            font-size: 15px;
+            margin-right: 13px;
+        }
+        .fa-hands-helping{
+            font-size: 12px;
+            margin-right: 11px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
