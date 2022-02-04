@@ -14,7 +14,10 @@
             border-radius: 17px;
             box-shadow: 0 2px 9px 1px $shadow;
             padding: 20px 5px;
-        }   
+            }
+            :hover{
+                background-color: lighten($primary, 35%);
+            }
         .fa-mobile-alt{
             color: $icons_fonctionnement;
             margin-right: 18px;
