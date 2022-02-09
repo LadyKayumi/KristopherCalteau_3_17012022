@@ -1,6 +1,8 @@
 ul{
     @include flex_column;
+    margin: 0;
     padding-left: 25px;
+    padding-bottom: 17px;
     background-color: #353535;
     .logo_blanc{
         width: 30%;

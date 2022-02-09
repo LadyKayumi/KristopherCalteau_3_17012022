@@ -6,6 +6,7 @@
     }
 .img_logo {
     width: 43%;
+    margin: 20px 0 10px;
 }
 .localisation{
     @include flex_center;
@@ -53,7 +54,8 @@
 .fa-arrow-left{
     position: absolute;
     left: 18px;
-    top: 12px;
+    top: 22px;
+    @include lien_noir
 }
 .img_fond{
     width: 100%;

@@ -90,9 +90,11 @@
 }
 @keyframes slidein{
     from{
-        transform: translateX(0%);
+        transform: translateY(-15px);
+        opacity: 0;
     }
     to{
-        transform: translateX(100%);
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
