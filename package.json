@@ -1,0 +1,22 @@
+{
+  "name": "oc-p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch ./assets/css/scss/style.scss:./assets/css/scss/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LadyKayumi/KristopherCalteau_3_17012022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LadyKayumi/KristopherCalteau_3_17012022/issues"
+  },
+  "homepage": "https://github.com/LadyKayumi/KristopherCalteau_3_17012022#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
