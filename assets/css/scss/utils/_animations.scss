@@ -94,7 +94,17 @@
         opacity: 0;
     }
     to{
-        transform: translateY(0px);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes checkmark{
+    from{
+        transform: translateX(25px) rotate(90deg);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0) rotate(360deg);
         opacity: 1;
     }
 }

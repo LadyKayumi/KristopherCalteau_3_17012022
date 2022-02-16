@@ -3,29 +3,36 @@ body{
 }
 .menu{
     position: relative;
-    padding-top: 1px;
-    padding-left: 20px;
-    padding-bottom: 35px;
     border-top-left-radius: 36px;
     border-top-right-radius: 36px;
     background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
     h1{
         font-family: 'Shrikhand', sans-serif;
+        margin-left: 20px;
     }
     h2{
         font-weight: normal;
         font-size: 17px;
         border-bottom: 3px solid $tertiary;
-        margin-right: 88%;
+        margin-right: 82%;
+        margin-left: 20px;
     }
 .entrées{
     margin-bottom: 35px;
+    animation: slidein .5s 0.6s ease-in forwards;
+    opacity: 0;
 }
 .plats{
     margin-bottom: 35px;
+    animation: slidein .5s 0.9s ease-in forwards;
+    opacity: 0;
 }
 .desserts{
     margin-bottom: 35px;
+    animation: slidein .5s 1.2s ease-in forwards;
+    opacity: 0;
 }
 .commander{
         @include bouton;
@@ -37,39 +44,74 @@ body{
     }
 }
 div{
-    a{
-        @include lien_noir;
-    }
     .plats_listes{
-        h3{
-            font-size: 16px;
-            margin: 0;
-            padding-top: 5px;
-            padding-bottom: 5px;
-        }
-        span{
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 5px 7px 1px #e4e4e4;
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        .description_plat{
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px;
+            width: 100%;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            h3{
+                font-size: 16px;
+                margin: 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
             p{
                 margin: 0;
-            }
-            :nth-child(1){
+                width: 85%;
                 font-size: 13px;
-            }
-            :nth-child(2){
-                font-weight: bold;
+                font-weight: normal;
             }
         }
-        @include flex_column;
-        background-color: white;
-        margin-right: 15px;
-        margin-left: -5px;
-        margin-bottom: 15px;
-        padding: 8px;
-        border-radius: 20px;
-        box-shadow: 0 5px 7px 1px $shadow;
+        div{
+            display: flex;
+            align-items: center;
+            margin: auto 5px;
+            overflow: hidden;
+            p{
+                font-weight: bold;
+            }
+            .checkmark{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                transition: width 500ms ease-in-out;
+                background-color: $tertiary;
+                .fa-check{
+                    color: $tertiary;
+                    transition: width 500ms ease-in-out;
+                    &::before{
+                        content: "";
+                    }
+                }
+            }
+        }
+        &:hover{
+            .checkmark{
+                width: 30%;
+                padding: 5px;
+                .fa-check{
+                    width: 30px;
+                    background-color: white;
+                    border-radius: 51%;
+                    border: 2px solid $tertiary;
+                    padding: 1px;
+                    animation: checkmark 1s;
+                }
+            }
+        }
     }
-    animation-name: slidein;
-    animation-duration: 1000ms;
 }
 }
