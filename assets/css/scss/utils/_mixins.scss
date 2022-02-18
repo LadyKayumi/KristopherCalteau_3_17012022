@@ -3,10 +3,10 @@
         text-decoration: none;
         color: white;
         background: linear-gradient(-5deg, $secondary 0%, $primary 85%, $secondary 100%);
+        box-shadow: 0 5px 8px 0 darken($shadow, 20%);
         border-radius: 25px;
         padding: 15px;
         margin-bottom: 30px;
-        transition: background 500ms;
             &:hover{
                 background: linear-gradient(-5deg, $secondary 0%, $primary 30%, $secondary 50%);
             }

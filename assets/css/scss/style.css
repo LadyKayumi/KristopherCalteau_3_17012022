@@ -5,15 +5,12 @@
 
 .lds-roller {
   display: inline-block;
-  position: relative;
-  width: 100%;
+  width: 61%;
   height: 100vh;
   position: absolute;
   z-index: 1000;
-  top: 200px;
-  left: 0;
-  right: 0;
   margin: auto;
+  padding: 110px 5px 0px 120px;
 }
 
 .lds-roller div {
@@ -28,7 +25,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fff;
+  background: #9356DC;
   margin: -4px 0 0 -4px;
 }
 
@@ -132,6 +129,20 @@
     opacity: 1;
   }
 }
+@keyframes loader {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -192,10 +203,10 @@
   text-decoration: none;
   color: white;
   background: linear-gradient(-5deg, #FF97DA 0%, #9356DC 85%, #FF97DA 100%);
+  box-shadow: 0 5px 8px 0 #b1b1b1;
   border-radius: 25px;
   padding: 15px;
   margin-bottom: 30px;
-  transition: background 500ms;
 }
 .introduction a:hover {
   background: linear-gradient(-5deg, #FF97DA 0%, #9356DC 30%, #FF97DA 50%);
@@ -274,6 +285,11 @@ body {
   margin: 0;
 }
 
+.lds-roller {
+  background: rgba(255, 255, 255, 0.8);
+  animation: loader 3s ease-in forwards;
+}
+
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -348,17 +364,14 @@ body {
   margin-left: 20px;
 }
 .menu .entrées {
-  margin-bottom: 35px;
   animation: slidein 0.5s 0.6s ease-in forwards;
   opacity: 0;
 }
 .menu .plats {
-  margin-bottom: 35px;
   animation: slidein 0.5s 0.9s ease-in forwards;
   opacity: 0;
 }
 .menu .desserts {
-  margin-bottom: 35px;
   animation: slidein 0.5s 1.2s ease-in forwards;
   opacity: 0;
 }
@@ -371,10 +384,10 @@ body {
   text-decoration: none;
   color: white;
   background: linear-gradient(-5deg, #FF97DA 0%, #9356DC 85%, #FF97DA 100%);
+  box-shadow: 0 5px 8px 0 #b1b1b1;
   border-radius: 25px;
   padding: 15px;
   margin-bottom: 30px;
-  transition: background 500ms;
 }
 .menu .commander a:hover {
   background: linear-gradient(-5deg, #FF97DA 0%, #9356DC 30%, #FF97DA 50%);

@@ -1,14 +1,11 @@
 .lds-roller {
     display: inline-block;
-    position: relative;
-    width: 100%;
+    width: 61%;
     height: 100vh;
     position: absolute;
     z-index: 1000;
-    top: 200px;
-    left: 0;
-    right: 0;
     margin: auto;
+    padding: 110px 5px 0px 120px;
 }
 .lds-roller div {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -21,7 +18,7 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #fff;
+    background: $primary;
     margin: -4px 0 0 -4px;
     }
     .lds-roller div:nth-child(1) {
@@ -106,5 +103,19 @@
     to{
         transform: translateX(0) rotate(360deg);
         opacity: 1;
+    }
+}
+@keyframes loader{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100%);
     }
 }
