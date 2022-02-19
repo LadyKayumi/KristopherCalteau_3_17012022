@@ -139,3 +139,11 @@
         transform: translateY(-100%);
     }
 }
+@keyframes coeur{
+    from{
+        color: white;
+    }
+    to{
+        color: lighten($primary, 10%);
+    }
+}

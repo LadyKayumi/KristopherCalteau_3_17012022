@@ -41,6 +41,27 @@ body{
             object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
+        .description_restaurants{
+            width: 50%;
+            .coeur{
+                position: absolute;
+                right: 25px;
+                bottom: 28px;
+                font-size: 22px;
+                :nth-child(2){
+                    display: none;
+                }
+                &:hover{
+                    :nth-child(1){
+                        display: none;
+                    }
+                    :nth-child(2){
+                        display: block;
+                        animation: coeur 0.5s ease-in-out forwards;
+                    }
+                }
+            }
+        }
         h2{
             font-size: 16px;
             margin: 10px 0 0 11px;

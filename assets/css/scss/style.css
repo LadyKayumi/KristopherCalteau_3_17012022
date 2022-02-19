@@ -163,6 +163,14 @@
     transform: translateY(-100%);
   }
 }
+@keyframes coeur {
+  from {
+    color: white;
+  }
+  to {
+    color: #ae80e5;
+  }
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -353,6 +361,25 @@ body {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+.restaurants a .description_restaurants {
+  width: 50%;
+}
+.restaurants a .description_restaurants .coeur {
+  position: absolute;
+  right: 25px;
+  bottom: 28px;
+  font-size: 22px;
+}
+.restaurants a .description_restaurants .coeur :nth-child(2) {
+  display: none;
+}
+.restaurants a .description_restaurants .coeur:hover :nth-child(1) {
+  display: none;
+}
+.restaurants a .description_restaurants .coeur:hover :nth-child(2) {
+  display: block;
+  animation: coeur 0.5s ease-in-out forwards;
+}
 .restaurants a h2 {
   font-size: 16px;
   margin: 10px 0 0 11px;
@@ -378,6 +405,23 @@ body {
 .menu h1 {
   font-family: "Shrikhand", sans-serif;
   margin-left: 20px;
+  font-size: 21px;
+}
+.menu .coeur {
+  position: absolute;
+  right: 35px;
+  top: 22px;
+  font-size: 22px;
+}
+.menu .coeur :nth-child(2) {
+  display: none;
+}
+.menu .coeur:hover :nth-child(1) {
+  display: none;
+}
+.menu .coeur:hover :nth-child(2) {
+  display: block;
+  animation: coeur 0.5s ease-in-out forwards;
 }
 .menu h2 {
   font-weight: normal;
@@ -436,7 +480,7 @@ body {
   min-width: 0;
 }
 .menu div .plats_listes .description_plat h3 {
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;

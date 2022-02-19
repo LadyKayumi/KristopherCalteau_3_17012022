@@ -11,6 +11,25 @@ body{
     h1{
         font-family: 'Shrikhand', sans-serif;
         margin-left: 20px;
+        font-size: 21px;
+    }
+    .coeur{
+        position: absolute;
+        right: 35px;
+        top: 22px;
+        font-size: 22px;
+        :nth-child(2){
+            display: none;
+        }
+        &:hover{
+            :nth-child(1){
+                display: none;
+            }
+            :nth-child(2){
+                display: block;
+                animation: coeur 0.5s ease-in-out forwards;
+            }
+        }
     }
     h2{
         font-weight: normal;
@@ -56,7 +75,7 @@ div{
             width: 100%;
             min-width: 0;
             h3{
-                font-size: 16px;
+                font-size: 15px;
                 margin: 0;
                 padding-top: 5px;
                 padding-bottom: 5px;
