@@ -5,9 +5,9 @@
 
 .lds-roller {
   display: inline-block;
+  position: fixed;
   width: 61%;
   height: 100vh;
-  position: absolute;
   z-index: 1000;
   margin: auto;
   padding: 110px 5px 0px 120px;
@@ -230,6 +230,7 @@
 }
 .introduction a:hover {
   background: linear-gradient(-5deg, #FF97DA 0%, #9356DC 30%, #FF97DA 50%);
+  box-shadow: 0 5px 8px 0 #8b8b8b;
 }
 .introduction a {
   display: flex;
@@ -413,6 +414,7 @@ body {
 }
 .menu .commander a:hover {
   background: linear-gradient(-5deg, #FF97DA 0%, #9356DC 30%, #FF97DA 50%);
+  box-shadow: 0 5px 8px 0 #8b8b8b;
 }
 .menu .commander a {
   padding: 15px 45px 15px 45px;
