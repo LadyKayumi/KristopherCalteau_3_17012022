@@ -246,6 +246,8 @@
 .img_fond {
   width: 100%;
   margin-bottom: -40px;
+  object-fit: cover;
+  max-height: 230px;
 }
 
 .fonctionnement {

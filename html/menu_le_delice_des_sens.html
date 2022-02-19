@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../assets/images/logo/ohmyfood@2x.svg">
@@ -17,68 +17,131 @@
     <header>
         <div class="logo">
             <a href="/accueil.html"><i class="fas fa-arrow-left"></i></a>
-            <img src="../assets/images/logo/ohmyfood.png" alt="Logo ohmyfood">
+            <img class="img_logo" src="../assets/images/logo/ohmyfood.png" alt="Logo ohmyfood">
         </div>
     </header>
     <main>
         <div class="images_top">
-            <img class="img_logo" class="img_fond" src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+            <img class="img_fond" src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant À la française">
         </div>
         <section class="menu">
             <h1>Le délice des sens</h1>
             <div class="entrées">
                 <h2>Entrées</h2>
-                    <a href="#">
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Tartare de thon</h3>
-                            <p>Assaisonné au yuzu</p>
-                            <p>25€</p>
-                    </a>
-                    <a href="#">    
+                        <p>Assaisonné au yuzu</p>
+                    </div>
+                    <div>
+                        <em>25€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Bouchée de homard croustillant</h3>
-                            <p>Et sa farandole de petits légumes</p>
-                            <p>35€</p>
-                    </a>
-                    <a href="#">
+                        <p>Et sa farandole de petits légumes</p>
+                    </div>
+                    <div>
+                        <em>35€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Velouté de cèpes</h3>
-                            <p>Aux truffes</p>
-                            <p>20€</p>
-                    </a>
+                        <p>Aux truffes</p>
+                    </div>
+                    <div>
+                        <em>20€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="plats">
                 <h2>Plats</h2>
-                    <a href="#">
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Poulet rôti aux herbes de Provence</h3>
-                            <p>Et sa crème de truffe</p>
-                            <p>40€</p>
-                    </a>
-                    <a href="#">
+                        <p>Et sa crème de truffe</p>
+                    </div>
+                    <div>
+                        <em>40€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Langouste rôtie</h3>
-                            <p>Et ses légumes de saison</p>
-                            <p>35€</p>
-                    </a>
-                    <a href="#">
+                        <p>Et ses légumes de saison</p>
+                    </div>
+                    <div>
+                        <em>35€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Côte de boeuf Angus</h3>
-                            <p>Et sa purée de panais</p>
-                            <p>44€</p>
-                    </a>
+                        <p>Et sa purée de panais</p>
+                    </div>
+                    <div>
+                        <em>44€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="Desserts">
                 <h2>Desserts</h2>
-                    <a href="#">
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Farandole de desserts</h3>
-                            <p>Du chef</p>
-                            <p>18€</p>
-                    </a>
-                    <a href="#">
+                        <p>Du chef</p>
+                    </div>
+                    <div>
+                        <em>18€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Crème brulée</h3>
-                            <p>Revisité</p>
-                            <p>22€</p>
-                    </a>
-                    <a href="#">
+                        <p>Revisitée</p>
+                    </div>
+                    <div>
+                        <em>22€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="plats_listes">
+                    <div class="description_plat">
                         <h3>Tiramisu</h3>
-                            <p>À la noisette</p>
-                            <p>23€</p>
-                    </a>
+                        <p>À la noisette</p>
+                    </div>
+                    <div>
+                        <em>23€</em>
+                        <div class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="commander">
                 <a href="#">Commander</a>
