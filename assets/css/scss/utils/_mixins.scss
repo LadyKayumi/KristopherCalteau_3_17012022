@@ -3,14 +3,14 @@
         text-decoration: none;
         color: white;
         background-color: $primary;
-        background-image: linear-gradient(white, rgba(255,255,255,0));
+        background-image: linear-gradient($secondary, rgba(255,255,255,0));
         box-shadow: 0 5px 8px 0 darken($shadow, 20%);
         border-radius: 25px;
         padding: 15px;
         margin-bottom: 30px;
         transition: all ease-in-out 0.3s;
         &:hover{
-            background-color: $secondary;
+            background-color: lighten($secondary, 10%);
             box-shadow: 0 5px 8px 0 darken($shadow, 35%);
         }
     }
