@@ -48,63 +48,62 @@ div{
         width: 90%;
         margin: 10px auto;
         display: flex;
+        cursor: pointer;
         .description_plat{
             display: flex;
             flex-wrap: wrap;
             padding: 10px;
             width: 100%;
             min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
             h3{
                 font-size: 16px;
                 margin: 0;
                 padding-top: 5px;
                 padding-bottom: 5px;
+                @include ellipsis
             }
             p{
                 margin: 0;
-                width: 85%;
+                width: 100%;
                 font-size: 13px;
                 font-weight: normal;
+                @include ellipsis
             }
         }
         div{
             display: flex;
             align-items: center;
-            margin: auto 5px;
+            margin: auto;
             overflow: hidden;
-            p{
+            em{
                 font-weight: bold;
+                font-style: normal;
+                font-size: 13px;
+                margin-top: 25px;
+                margin-right: 20px;
             }
             .checkmark{
                 display: flex;
                 justify-content: center;
-                align-items: center;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
-                transition: width 500ms ease-in-out;
                 background-color: $tertiary;
+                animation: checkout 0.5s ease-in-out forwards;
                 .fa-check{
+                    background-color: white;
                     color: $tertiary;
-                    transition: width 500ms ease-in-out;
-                    &::before{
-                        content: "";
-                    }
+                    border-radius: 51%;
+                    border: 2px solid $tertiary;
+                    padding: 3px;
+                    margin: 19px 40px;
                 }
             }
         }
         &:hover{
             .checkmark{
-                width: 30%;
-                padding: 5px;
+                animation: checkin 0.5s ease-in-out forwards;
                 .fa-check{
                     width: 30px;
-                    background-color: white;
-                    border-radius: 51%;
-                    border: 2px solid $tertiary;
-                    padding: 1px;
                     animation: checkmark 1s;
                 }
             }

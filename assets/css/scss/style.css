@@ -121,12 +121,32 @@
 }
 @keyframes checkmark {
   from {
-    transform: translateX(25px) rotate(90deg);
+    transform: rotate(90deg);
     opacity: 0;
   }
   to {
-    transform: translateX(0) rotate(360deg);
+    transform: rotate(360deg);
     opacity: 1;
+  }
+}
+@keyframes checkin {
+  from {
+    transform: translateX(50px);
+    width: 0;
+  }
+  to {
+    transform: translateX(0);
+    width: 120px;
+  }
+}
+@keyframes checkout {
+  from {
+    transform: translateX(0);
+    width: 120px;
+  }
+  to {
+    transform: translateX(50px);
+    width: 0;
   }
 }
 @keyframes loader {
@@ -402,6 +422,7 @@ body {
   width: 90%;
   margin: 10px auto;
   display: flex;
+  cursor: pointer;
 }
 .menu div .plats_listes .description_plat {
   display: flex;
@@ -409,57 +430,59 @@ body {
   padding: 10px;
   width: 100%;
   min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu div .plats_listes .description_plat h3 {
   font-size: 16px;
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu div .plats_listes .description_plat p {
   margin: 0;
-  width: 85%;
+  width: 100%;
   font-size: 13px;
   font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu div .plats_listes div {
   display: flex;
   align-items: center;
-  margin: auto 5px;
+  margin: auto;
   overflow: hidden;
 }
-.menu div .plats_listes div p {
+.menu div .plats_listes div em {
   font-weight: bold;
+  font-style: normal;
+  font-size: 13px;
+  margin-top: 25px;
+  margin-right: 20px;
 }
 .menu div .plats_listes div .checkmark {
   display: flex;
   justify-content: center;
-  align-items: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  transition: width 500ms ease-in-out;
   background-color: #99E2D0;
+  animation: checkout 0.5s ease-in-out forwards;
 }
 .menu div .plats_listes div .checkmark .fa-check {
+  background-color: white;
   color: #99E2D0;
-  transition: width 500ms ease-in-out;
-}
-.menu div .plats_listes div .checkmark .fa-check::before {
-  content: "";
+  border-radius: 51%;
+  border: 2px solid #99E2D0;
+  padding: 3px;
+  margin: 19px 40px;
 }
 .menu div .plats_listes:hover .checkmark {
-  width: 30%;
-  padding: 5px;
+  animation: checkin 0.5s ease-in-out forwards;
 }
 .menu div .plats_listes:hover .checkmark .fa-check {
   width: 30px;
-  background-color: white;
-  border-radius: 51%;
-  border: 2px solid #99E2D0;
-  padding: 1px;
   animation: checkmark 1s;
 }
 

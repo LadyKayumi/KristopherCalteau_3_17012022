@@ -33,3 +33,8 @@
     color: darken($primary, 3%);
     transition: color 750ms;
 }
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

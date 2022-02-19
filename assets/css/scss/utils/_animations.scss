@@ -97,12 +97,32 @@
 }
 @keyframes checkmark{
     from{
-        transform: translateX(25px) rotate(90deg);
+        transform: rotate(90deg);
         opacity: 0;
     }
     to{
-        transform: translateX(0) rotate(360deg);
+        transform: rotate(360deg);
         opacity: 1;
+    }
+}
+@keyframes checkin{
+    from{
+        transform: translateX(50px);
+        width: 0;
+    }
+    to{
+        transform: translateX(0);
+        width: 120px;
+    }
+}
+@keyframes checkout{
+    from{
+        transform: translateX(0);
+        width: 120px;
+    }
+    to{
+        transform: translateX(50px);
+        width: 0;
     }
 }
 @keyframes loader{
