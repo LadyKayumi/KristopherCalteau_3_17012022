@@ -1,10 +1,6 @@
 body{
     margin: 0;
 }
-.lds-roller{
-    background: rgba(white, 0.8);
-    animation: loader 3s ease-in forwards;
-}
 .restaurants{
     @include flex_column;
     flex-wrap: wrap;

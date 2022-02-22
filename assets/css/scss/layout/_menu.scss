@@ -34,13 +34,32 @@ body{
     h2{
         font-weight: normal;
         font-size: 17px;
-        border-bottom: 3px solid $tertiary;
-        margin-right: 82%;
         margin-left: 20px;
+        &::after{
+            display: block;
+            content: "";
+            background: $tertiary;
+            width: 37px;
+            height: 3px;
+        }
     }
-.plats_animation{
-    animation: slidein .5s 0.6s ease-in forwards;
-    opacity: 0;
+.entrées{
+    .plats_animation{
+        animation: slidein .5s 0.6s ease-in forwards;
+        opacity: 0;
+    }
+}
+.plats{
+    .plats_animation{
+        animation: slidein .5s 1s ease-in forwards;
+        opacity: 0;
+    }
+}
+.desserts{
+    .plats_animation{
+        animation: slidein .5s 1.4s ease-in forwards;
+        opacity: 0;
+    }
 }
 .commander{
         @include bouton;
@@ -57,7 +76,7 @@ div{
         border-radius: 20px;
         box-shadow: 0 5px 7px 1px #e4e4e4;
         width: 90%;
-        margin: 10px auto;
+        margin: 15px auto;
         display: flex;
         cursor: pointer;
         .description_plat{
@@ -121,4 +140,34 @@ div{
         }
     }
 }
+}
+@media screen and (min-width: 768px){
+    .menu{
+        .plats_animation{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .plats_listes{
+                width: 30%;
+                margin: 10px 10px;
+            }
+        }
+        .commander{
+            a{
+                padding: 25px 55px 25px 55px;
+                border-radius: 35px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    .menu{
+        .plats_animation{
+            .plats_listes{
+                width: 23%;
+                margin: 10px 10px;
+                font-size: 20px;
+            }
+        }
+    }
 }
