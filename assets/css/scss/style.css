@@ -430,7 +430,7 @@ body {
   margin: 10px 0 0 11px;
 }
 .restaurants a h3 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   margin: 10px 0 10px 11px;
 }
@@ -438,6 +438,7 @@ body {
 @media screen and (min-width: 768px) {
   .restaurants {
     flex-direction: row;
+    justify-content: space-around;
   }
   .restaurants h1 {
     width: 100%;
@@ -489,6 +490,7 @@ body {
 .menu h2 {
   font-weight: normal;
   font-size: 17px;
+  text-transform: uppercase;
   margin-left: 20px;
 }
 .menu h2::after {
@@ -621,12 +623,18 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .menu .plats_animation .plats_listes {
-    width: 23%;
     margin: 10px 10px;
     font-size: 20px;
   }
 }
-ul {
+footer div {
+  background-color: #353535;
+}
+footer div .logo_blanc {
+  width: 20%;
+  margin: 20px 0 15px 15px;
+}
+footer div ul {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -634,32 +642,21 @@ ul {
   padding-bottom: 17px;
   background-color: #353535;
 }
-ul .logo_blanc {
-  width: 30%;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-ul li {
+footer div ul li {
   list-style: none;
   margin-bottom: 10px;
 }
-ul li .fa-utensils {
+footer div ul li .fa-utensils {
   font-size: 15px;
   margin-right: 13px;
 }
-ul li .fa-hands-helping {
+footer div ul li .fa-hands-helping {
   font-size: 12px;
   margin-right: 11px;
 }
-ul li a {
+footer div ul li a {
   text-decoration: none;
   color: white;
-}
-
-@media all and (min-width: 768px) {
-  ul .logo_blanc {
-    width: 20%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

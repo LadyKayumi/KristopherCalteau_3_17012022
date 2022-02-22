@@ -1,35 +1,32 @@
-ul{
-    @include flex_column;
-    margin: 0;
-    padding-left: 25px;
-    padding-bottom: 17px;
-    background-color: #353535;
-    .logo_blanc{
-        width: 30%;
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }
-    li{
-        list-style: none;
-        margin-bottom: 10px;
-        .fa-utensils{
-            font-size: 15px;
-            margin-right: 13px;
-        }
-        .fa-hands-helping{
-            font-size: 12px;
-            margin-right: 11px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-    }
-}
-@media all and (min-width: 768px){
-    ul{
+footer{
+    div{
+        background-color: #353535;
         .logo_blanc{
             width: 20%;
+            margin: 20px 0 15px 15px;
+        }
+        ul{
+            @include flex_column;
+            margin: 0;
+            padding-left: 25px;
+            padding-bottom: 17px;
+            background-color: #353535;
+            li{
+                list-style: none;
+                margin-bottom: 10px;
+                .fa-utensils{
+                    font-size: 15px;
+                    margin-right: 13px;
+                }
+                .fa-hands-helping{
+                    font-size: 12px;
+                    margin-right: 11px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
         }
     }
 }

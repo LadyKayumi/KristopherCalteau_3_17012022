@@ -63,7 +63,7 @@ body{
             margin: 10px 0 0 11px;
         }
         h3{
-            font-size: 15px;
+            font-size: 14px;
             font-weight: normal;
             margin: 10px 0 10px 11px;
         }
@@ -72,6 +72,7 @@ body{
 @media screen and (min-width: 768px){
     .restaurants{
         flex-direction: row;
+        justify-content: space-around;
         h1{
             width: 100%;
         }
