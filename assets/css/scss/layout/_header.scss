@@ -41,7 +41,6 @@
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        width: 80%;
         margin-top: 0;
         margin-bottom: 16px;
         font-size: 14px;
@@ -62,4 +61,33 @@
     margin-bottom: -40px;
     object-fit: cover;
     max-height: 230px;
+}
+@media screen and (min-width: 768px){
+    .localisation{
+        a{
+            font-size: 15px;
+        }
+    }
+    .introduction{
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 16px;
+        }
+        a{
+            padding: 23px;
+            border-radius: 33px
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .img_logo{
+        width: 37%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .img_logo{
+        width: 25%;
+    }
 }

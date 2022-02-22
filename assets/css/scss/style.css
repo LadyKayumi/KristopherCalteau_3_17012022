@@ -5,8 +5,8 @@
 .lds-roller {
   display: inline-block;
   position: fixed;
-  width: 61%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1000;
   margin: auto;
   padding: 110px 5px 0px 120px;
@@ -221,7 +221,6 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  width: 80%;
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 14px;
@@ -260,6 +259,32 @@
   max-height: 230px;
 }
 
+@media screen and (min-width: 768px) {
+  .localisation a {
+    font-size: 15px;
+  }
+
+  .introduction h1 {
+    font-size: 25px;
+  }
+  .introduction p {
+    font-size: 16px;
+  }
+  .introduction a {
+    padding: 23px;
+    border-radius: 33px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img_logo {
+    width: 37%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img_logo {
+    width: 25%;
+  }
+}
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -313,6 +338,25 @@
   margin-left: -17px;
 }
 
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    margin-bottom: 35px;
+    flex-direction: row;
+  }
+  .fonctionnement h1 {
+    margin-left: 30px;
+    width: 100%;
+  }
+  .fonctionnement div {
+    margin-bottom: 25px;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement div {
+    width: 25%;
+  }
+}
 body {
   margin: 0;
 }
@@ -391,6 +435,24 @@ body {
   margin: 10px 0 10px 11px;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurants {
+    flex-direction: row;
+  }
+  .restaurants h1 {
+    width: 100%;
+  }
+  .restaurants a {
+    width: 47%;
+    margin-right: 20px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants a {
+    width: 22%;
+  }
+}
 body {
   margin: 0;
 }
@@ -557,6 +619,12 @@ ul li .fa-hands-helping {
 ul li a {
   text-decoration: none;
   color: white;
+}
+
+@media all and (min-width: 768px) {
+  ul .logo_blanc {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
