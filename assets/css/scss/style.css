@@ -287,7 +287,7 @@
 }
 @media screen and (min-width: 1024px) {
   .img_logo {
-    width: 25%;
+    width: 20%;
   }
 }
 .fonctionnement {
@@ -631,7 +631,7 @@ footer div {
   background-color: #353535;
 }
 footer div .logo_blanc {
-  width: 20%;
+  width: 15%;
   margin: 20px 0 15px 15px;
 }
 footer div ul {
